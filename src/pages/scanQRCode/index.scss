@@ -1,0 +1,68 @@
+/* HEADER */
+.checklist-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: linear-gradient(90deg, #23457b, #2f63b3);
+  color: #fff;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.back-icon {
+  font-size: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-icon:hover {
+  transform: translateX(-3px);
+}
+
+/* TABLE */
+.checklist-table .ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.checklist-table .ant-table-thead > tr > th {
+  background: #f0f4ff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.checklist-table .ant-table-tbody > tr:hover > td {
+  background: #f9fbff;
+}
+
+/* CHECKBOX */
+.checklist-table .ant-checkbox-inner {
+  width: 18px;
+  height: 18px;
+}
+
+.checklist-table .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #2f63b3;
+  border-color: #2f63b3;
+}
+/* HEADER */
+.checklist-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+  color: #fff;
+  padding: 0 15px;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

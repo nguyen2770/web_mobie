@@ -1,0 +1,35 @@
+.asset-line {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 14px;
+  color: #1f1f1f;
+}
+
+.asset-line.sub {
+  font-size: 13px;
+  color: #595959;
+}
+
+.asset-name {
+  font-weight: 600;
+}
+
+.asset-model {
+  font-weight: 500;
+}
+
+.asset-number {
+  color: #1677ff;
+  font-weight: 500;
+}
+
+.divider {
+  margin: 0 6px;
+  color: #bfbfbf;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

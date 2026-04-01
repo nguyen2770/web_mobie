@@ -1,0 +1,27 @@
+.ticket-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f1f1f;
+  line-height: 1.4;
+}
+
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.asset-info {
+  font-size: 13px;
+  color: #595959;
+  line-height: 1.6;
+}
+
+.asset-info span {
+  display: block;
+}
+
+.asset-info span:not(:last-child) {
+  margin-bottom: 2px;
+}
