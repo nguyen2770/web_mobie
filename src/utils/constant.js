@@ -101,7 +101,7 @@ export const REPORT_TYPE = {
 };
 export const PAGINATION = {
   page: 1,
-  limit: 7,
+  limit: 10,
   sortBy: null,
   totalRecord: 0,
 };

@@ -67,7 +67,7 @@ const Login = (props) => {
         <Col md={16} lg={16} xl={16} className="">
           <div className="text-center pt-5">
             <img
-              src={logo}
+              src={"sdf"}
               alt=""
               style={{ width: "60%", backgroundColor: "white", padding: 5 }}
             />

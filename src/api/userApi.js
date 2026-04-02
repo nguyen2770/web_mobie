@@ -43,5 +43,5 @@ export const getCompanyByCode = (code) => {
   return patch(`users/get-company-by-code/${code}`, {});
 };
 export const updateLastLoginTime = () => {
-  return restGateway.patch(`users/update-last-login-time`, {});
+  return patch(`users/update-last-login-time`, {});
 };
