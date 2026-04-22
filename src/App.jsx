@@ -9,7 +9,7 @@ import {
 } from "./router/RouteUnAuthenConfig";
 // import usePushNotifications from "./hooks/usePushNotifications";
 // import UAParser from 'ua-parser-js';
-import { notification } from "antd";
+import { Modal, notification } from "antd";
 import { useTranslation } from "react-i18next";
 import { socket } from "./socket";
 
@@ -22,49 +22,18 @@ function App(props) {
   const [openPermissionNotification, setOpenPermissionNotification] =
     useState(false);
   const [isAppInstalled, setIsAppInstalled] = useState(false);
-  // const {
-  //   userConsent,
-  //   pushNotificationSupported,
-  //   userSubscription,
-  //   onClickAskUserPermission,
-  //   onClickSusbribeToPushNotification,
-  //   setPushServerSubscriptionId
-  // } = usePushNotifications();
+  const {
+    userConsent,
+    pushNotificationSupported,
+    userSubscription,
+    onClickAskUserPermission,
+    onClickSusbribeToPushNotification,
+    setPushServerSubscriptionId
+  } = usePushNotifications();
   const { isAuthenticated, user, logout } = useAuth();
   const { t } = useTranslation();
 
   useEffect(() => { }, [isAuthenticated]);
-  // useEffect(() => {
-  //   if (!(!pushNotificationSupported || userConsent === 'granted')) {
-  //     setOpenPermissionNotification(true)
-  //   }
-  // }, [pushNotificationSupported, userConsent])
-  // useEffect(() => {
-  //   if (userConsent === 'granted' && isAuthenticated) {
-  //     onClickSusbribeToPushNotification();
-  //   }
-  // }, [userConsent, isAuthenticated])
-  // useEffect(() => {
-  //   if (userSubscription && isAuthenticated) {
-  //     susbscriptionDevice();
-  //   }
-  // }, [userSubscription, isAuthenticated])
-  // const susbscriptionDevice = async () => {
-  //   const payload = {
-  //     ...parser.getDevice(),
-  //     ...parser.getBrowser(),
-  //     subscription: userSubscription
-  //   }
-  //   let res = await _unitOfWork.notification.susbscription(payload)
-  //   if (res && res.code === 1) {
-  //     setPushServerSubscriptionId(res.data.susbscriptionId)
-  //     localStorage.setItem(STORAGE_KEY.SUSBSCRIPTION_ID, res.data.susbscriptionId);
-  //   }
-  // }
-  // const onClickOkPermissionNotification = () => {
-  //   onClickAskUserPermission();
-  //   setOpenPermissionNotification(false);
-  // };
   useEffect(() => {
     if (isAuthenticated && user && (user.id || user._id)) {
       const userId = user.id || user._id;

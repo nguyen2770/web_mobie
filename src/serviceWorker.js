@@ -166,19 +166,19 @@ export function getUserSubscription() {
 }
 
 //sửa lại hàm / check kỹ hơn
-// export function getUserSubscription() {
-//   // if (!("serviceWorker" in navigator)) {
-//   //   return Promise.resolve(null);
-//   // }
-//   return navigator.serviceWorker.ready
-//     .then(function (serviceWorker) {
-//       if (!serviceWorker.pushManager) return null;
-//       return serviceWorker.pushManager.getSubscription();
-//     })
-//     .then(function (pushSubscription) {
-//       return pushSubscription;
-//     });
-// }
+export function getUserSubscription() {
+  // if (!("serviceWorker" in navigator)) {
+  //   return Promise.resolve(null);
+  // }
+  return navigator.serviceWorker.ready
+    .then(function (serviceWorker) {
+      if (!serviceWorker.pushManager) return null;
+      return serviceWorker.pushManager.getSubscription();
+    })
+    .then(function (pushSubscription) {
+      return pushSubscription;
+    });
+}
 
 export function isPushNotificationSupported() {
   return "serviceWorker" in navigator && "PushManager" in window;
