@@ -154,7 +154,7 @@ export async function createNotificationSubscription() {
   });
 }
 
-export function getUserSubscription() {
+export async function getUserSubscription() {
   //wait for service worker installation to be ready, and then
   return navigator.serviceWorker.ready
     .then(function (serviceWorker) {
@@ -166,7 +166,7 @@ export function getUserSubscription() {
 }
 
 //sửa lại hàm / check kỹ hơn
-export function getUserSubscription() {
+export async function getUserSubscription() {
   // if (!("serviceWorker" in navigator)) {
   //   return Promise.resolve(null);
   // }
