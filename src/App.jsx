@@ -7,8 +7,8 @@ import { flatRoutes, staticPath } from "./router/RouteConfig";
 import {
   flatUnAuthenConfig
 } from "./router/RouteUnAuthenConfig";
-// import usePushNotifications from "./hooks/usePushNotifications";
-// import UAParser from 'ua-parser-js';
+ import usePushNotifications from "./hooks/usePushNotifications";
+ import UAParser from 'ua-parser-js';
 import { Modal, notification } from "antd";
 import { useTranslation } from "react-i18next";
 import { socket } from "./socket";
