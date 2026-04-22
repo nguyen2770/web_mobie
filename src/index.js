@@ -10,7 +10,7 @@ import { SchedulePreventiveProvider } from "./contexts/schedulePreventiveContext
 import { PermissionProvider } from "./contexts/permissionContext";
 import { CalibrationGroupProvider } from "./contexts/calibrationWorkContext";
 import { FooterProvider } from "./contexts/footerContext";
-// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import './config-translation'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
