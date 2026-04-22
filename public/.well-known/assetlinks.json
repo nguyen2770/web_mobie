@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "vn.id.tranbaonguyen.datn_mobie.twa",
+            "sha256_cert_fingerprints": [
+                "D7:57:51:6F:0C:23:44:29:21:0B:E3:F0:85:12:64:B0:B2:30:6A:7D:32:79:DC:F0:8C:06:ED:F9:8E:60:F6:37"
+            ]
+        }
+    }
+]
